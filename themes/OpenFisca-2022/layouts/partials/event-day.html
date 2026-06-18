@@ -1,0 +1,23 @@
+{{- /*
+  event-day — a day-of-month with language-appropriate ordinal markup.
+  Usage: {{ partial "event-day.html" (dict "day" 31 "lang" "en") }}
+  EN: 1<sup>st</sup> 2<sup>nd</sup> 3<sup>rd</sup> 4<sup>th</sup> … 11–13<sup>th</sup> … 31<sup>st</sup>
+  FR: 1<sup>er</sup>, then plain (2, 3, …)
+*/ -}}
+{{- $d := .day -}}
+{{- $out := printf "%d" $d -}}
+{{- if eq .lang "fr" -}}
+  {{- if eq $d 1 -}}{{- $out = "1<sup>er</sup>" -}}{{- end -}}
+{{- else -}}
+  {{- $suffix := "th" -}}
+  {{- $m100 := mod $d 100 -}}
+  {{- if and (ne $m100 11) (ne $m100 12) (ne $m100 13) -}}
+    {{- $m10 := mod $d 10 -}}
+    {{- if eq $m10 1 -}}{{- $suffix = "st" -}}
+    {{- else if eq $m10 2 -}}{{- $suffix = "nd" -}}
+    {{- else if eq $m10 3 -}}{{- $suffix = "rd" -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $out = printf "%d<sup>%s</sup>" $d $suffix -}}
+{{- end -}}
+{{- return $out -}}

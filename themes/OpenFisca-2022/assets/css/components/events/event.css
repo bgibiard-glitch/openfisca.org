@@ -1,0 +1,11 @@
+.event_title{
+  margin-bottom: var(--xl);
+}
+
+.event_metadata {
+  margin-bottom: var(--xl);
+  
+  & li > .flag {
+    display: inline-flex;
+  }
+}

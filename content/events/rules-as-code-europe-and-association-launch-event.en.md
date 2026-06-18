@@ -2,13 +2,14 @@
 title: Rules as Code Europe and Association Launch Event — 2025 OpenFisca Conference
 aliases:
   - /en/conference/2025/
+start_date: 2025-03-17
+end_date: 2025-03-19
+pricing: Free event upon registration
+location:
+  city: Paris
+  country: France
+  country_code: FR
 ---
-
-# 2025 OpenFisca Conference — <br/>Rules as Code Europe & Association Launch Event
-
-📅 17<sup>th</sup>–19<sup>th</sup> March 2025
-🇫🇷 Paris, France
-🎟️ Free event upon registration
 
 ## Days 1 and 2: Rules as Code Europe
 
@@ -16,17 +17,13 @@ The OpenFisca Association is a co-organiser of the first Rules as Code Europe co
 
 All details can be found on the [conference website](https://docs.numerique.gouv.fr/docs/1b64643b-7163-4a96-b78d-251f3a5e81e7/).
 
-### Venue
-
-Lieu de la Transformation Publique
+{{< venue name="Lieu de la Transformation Publique" address="77 avenue de Ségur, 75015 Paris"  lat="48.8566" lon="2.3522" >}}
 
 ## Day 3, 09h00 – 11h30: Association Launch Event
 
 Join other Association members for a reception at the Main Dining Hall of the Ministry for Foreign Affairs. With interventions in person but also live from Oslo, Canberra and Wellington, you will discover the path for further adoption of Rules as Code and Digital Public Goods in 2025, learn more about the governance of transformative digital commons and the state of OpenFisca adoption around the world.
 
-### Venue
-
-Grande salle à manger, Hôtel du ministre, Ministère de l'Europe et des Affaires Étrangères
+{{< venue name="Grande salle à manger, Hôtel du ministre, Ministère de l’Europe et des Affaires Étrangères" address="37 Quai d'Orsay, 75007 Paris" >}}
 
 ### Schedule
 
@@ -39,17 +36,13 @@ Grande salle à manger, Hôtel du ministre, Ministère de l'Europe et des Affair
 
 Meet with speakers, founding members, senior contributors and other international delegations over a delicious lunch in the center of Paris.
 
-### Venue
-
-Fuga Riviera, 10 port des Invalides, 75007 Paris
+{{< venue name="Fuga Riviera" address="10 port des Invalides, 75007 Paris" >}}
 
 ## Day 3, 14h30 – 17h00: Community Gathering
 
 Connect with the wider OpenFisca community, share your interrogations, successes and needs in your usage of the product and meet with other people who have been there too.
 
-### Venue
-
-Lieu de la Transformation Publique
+{{< venue name="Lieu de la Transformation Publique" address="77 avenue de Ségur, 75015 Paris" lat="48.8566" lon="2.3522" >}}
 
 ## Sponsors
 

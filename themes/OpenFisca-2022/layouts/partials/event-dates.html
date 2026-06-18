@@ -1,0 +1,27 @@
+{{- /*
+  event-dates — a localized event date range built from start/end dates.
+  Usage: {{ partial "event-dates.html" (dict "start" .Params.start_date "end" .Params.end_date) }}
+  Month names are localized to the current site language (EN/FR) via time.Format;
+  days carry EN ordinals (30<sup>th</sup>) / FR "1<sup>er</sup>". Adapts to same day,
+  same month, cross-month (same year) and cross-year ranges.
+*/ -}}
+{{- $start := time.AsTime .start -}}
+{{- $end := time.AsTime .end -}}
+{{- $lang := site.Language.Lang -}}
+{{- $sd := partial "event-day.html" (dict "day" $start.Day "lang" $lang) -}}
+{{- $ed := partial "event-day.html" (dict "day" $end.Day "lang" $lang) -}}
+{{- $out := "" -}}
+{{- if eq ($start.Format "2006-01-02") ($end.Format "2006-01-02") -}}
+  {{- /* single day — e.g. 30<sup>th</sup> March 2026 */ -}}
+  {{- $out = printf "%s %s" $sd (time.Format "January 2006" $start) -}}
+{{- else if eq ($start.Format "2006-01") ($end.Format "2006-01") -}}
+  {{- /* same month — e.g. 30<sup>th</sup>–31<sup>st</sup> March 2026 */ -}}
+  {{- $out = printf "%s–%s %s" $sd $ed (time.Format "January 2006" $start) -}}
+{{- else if eq ($start.Format "2006") ($end.Format "2006") -}}
+  {{- /* cross-month, same year — e.g. 30<sup>th</sup> April – 2<sup>nd</sup> May 2026 */ -}}
+  {{- $out = printf "%s %s – %s %s" $sd (time.Format "January" $start) $ed (time.Format "January 2006" $end) -}}
+{{- else -}}
+  {{- /* cross-year — e.g. 31<sup>st</sup> December 2026 – 2<sup>nd</sup> January 2027 */ -}}
+  {{- $out = printf "%s %s – %s %s" $sd (time.Format "January 2006" $start) $ed (time.Format "January 2006" $end) -}}
+{{- end -}}
+{{- return ($out | safeHTML) -}}

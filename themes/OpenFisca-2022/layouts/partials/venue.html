@@ -1,0 +1,24 @@
+{{- /*
+  venue — "Venue" heading. The venue NAME links to OpenStreetMap only when
+  coordinates are given (then GPS + embedded map follow); the address is always
+  plain text. Without coordinates, everything is plain text.
+  All params optional: name, address, lat, lon. Used via the "venue" shortcode.
+*/ -}}
+{{- $name := .name -}}
+{{- $address := .address -}}
+{{- $lat := .lat -}}
+{{- $lon := .lon -}}
+<h3>Venue</h3>
+{{ if and $lat $lon -}}
+  {{- $lat = float $lat -}}
+  {{- $lon = float $lon -}}
+  {{- $href := printf "https://www.openstreetmap.org/?mlat=%v&mlon=%v#map=17/%v/%v" $lat $lon $lat $lon -}}
+  {{- $bbox := printf "%v,%v,%v,%v" (sub $lon 0.0059) (sub $lat 0.0034) (add $lon 0.0059) (add $lat 0.0034) -}}
+  <p><a href="{{ $href }}" target="_blank" rel="noopener">{{ $name | default "View on map" }}</a>{{ with $address }}, {{ . }}{{ end }} (GPS: {{ printf "%.3f" $lat }}, {{ printf "%.3f" $lon }})</p>
+  <iframe width="425" height="350" loading="lazy" style="border:1px solid black" src="https://www.openstreetmap.org/export/embed.html?bbox={{ $bbox }}&amp;layer=mapnik&amp;marker={{ $lat }},{{ $lon }}"></iframe>
+{{- else -}}
+  {{- $all := slice -}}
+  {{- with $name }}{{ $all = $all | append . }}{{ end -}}
+  {{- with $address }}{{ $all = $all | append . }}{{ end -}}
+  {{- with delimit $all ", " }}<p>{{ . }}</p>{{ end -}}
+{{- end -}}

@@ -3,10 +3,16 @@
     <div class="wrapper">
       <div class="grid grid-hasPaddingBottom grid-hasPaddingTop">
         <div class="grid_col-8 grid_col-center">
+          <h1 class="event_title">{{ .Title }}</h1>
+          <ul class="event_metadata">
+            <li>📅 {{ partial "event-dates.html" (dict "start" .Params.start_date "end" .Params.end_date) }}</li>
+            {{ with .Params.location }}{{ $loc := . }}<li>{{ partial "flag.html" (dict "jurisdiction" $loc.country_code) }} {{ $loc.city }}, {{ $loc.country }}</li>{{ end }}
+            {{ with .Params.pricing }}<li>🎟️ {{ . }}</li>{{ end }}
+          </ul>
           <div class="text">
             {{ .Content }}
-            {{ partial "code-of-conduct.html" . }}
           </div>
+          {{ partial "code-of-conduct.html" . }}
         </div>
       </div>
     </div>

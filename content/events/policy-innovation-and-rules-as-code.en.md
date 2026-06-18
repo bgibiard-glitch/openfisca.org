@@ -2,13 +2,14 @@
 title: Policy Innovation and Rules as Code — 2026 OpenFisca Conference
 aliases:
   - /en/conference/2026/
+start_date: 2026-03-30
+end_date: 2026-03-31
+pricing: Free event upon registration
+location:
+  city: Canberra
+  country: Australia
+  country_code: AU
 ---
-
-# 2026 OpenFisca Conference — <br/>Policy Innovation & Rules as Code
-
-📅 30<sup>th</sup>–31<sup>st</sup> March 2026
-🇦🇺 Canberra, Australian Capital Territory, Australia
-🎟️ Free event upon registration
 
 ## Day 1: Policy innovation for better public outcomes
 
@@ -16,11 +17,7 @@ Policy making and delivery has largely not kept pace with the increased speed, c
 
 The Policy Innovation for Public Good event is dedicated to exploring these questions, through international and cross-disciplinary cooperation, bringing together a wide range of civil servants and policy aficionados to share experience, aspirations and bring bold collective reimagining of policy making and delivery.
 
-### Venue
-
-[INSPIRE Centre](https://www.openstreetmap.org/?mlat=-35.238237&amp;mlon=149.082091#map=17/-35.238237/149.082091), University of Canberra (GPS: -35.238,149.082)
-
-<iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=149.07624363899234%2C-35.2415884341076%2C149.08793807029727%2C-35.23488482749079&amp;layer=mapnik&amp;marker=-35.23823670005701%2C149.08209085464478" style="border: 1px solid black"></iframe>
+{{< venue name="INSPIRE Centre" address="University of Canberra" lat="-35.238" lon="149.082" >}}
 
 ### Schedule
 
@@ -83,11 +80,7 @@ Courtesy of the GovCMS team.
 
 The second International OpenFisca Conference will bring together policymakers and technical experts to advance transparency, innovation, and collaboration in Rules as Code. The intention of this event is to explore and share Rules as Code case studies, best practices and innovative approaches, and celebrate public and civil society actors who have made strong achievements. OpenFisca is the world’s most widely adopted free and open-source platform to write, provide and support proactive modelling and operational use of Rules as Code. This annual conference provides both a chance to learn from exciting Rules as Code innovation around the world, and to extend our collective vision towards where we need to go.
 
-### Venue
-
-Semesters Room, [Building One](https://www.openstreetmap.org/?mlat=-35.238624&mlon=149.084730#map=18/-35.238624/149.084730), University of Canberra (GPS: -35.239,149.085)
-
-<iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=149.080867767334%2C-35.24030033309568%2C149.0885925292969%2C-35.23694854581096&amp;layer=mapnik&amp;marker=-35.23862445676786%2C149.08473014831543" style="border: 1px solid black"></iframe>
+{{< venue name="Semesters Room, Building One" adress="University of Canberra" lat="-35.239" lon="149.085">}}
 
 ### Schedule
 
