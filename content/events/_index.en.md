@@ -1,6 +1,5 @@
 ---
 html_title: OpenFisca Yearly Conference
-layout: events
 aliases:
   - /en/conference/
 ---

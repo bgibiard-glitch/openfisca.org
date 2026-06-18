@@ -1,6 +1,5 @@
 ---
 html_title: Conférence annuelle OpenFisca
-layout: events
 url: /fr/evenements/
 aliases:
   - /fr/conference/
