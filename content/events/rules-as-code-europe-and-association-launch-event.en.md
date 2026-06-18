@@ -67,9 +67,3 @@ Lieu de la Transformation Publique
     }
   ]
 {{< /sponsors >}}
-
-## Code of conduct
-
-This event is subject to the OpenFisca events [code of conduct]({{< relref path="code-of-conduct" >}}). By registering, you agree to abide by it. The quick version of the code of conduct is below:
-
-> Our events are dedicated to providing a harassment-free conference experience for everyone, regardless of gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion or lack thereof, or technology choices. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, and online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
