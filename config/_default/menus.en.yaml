@@ -8,8 +8,8 @@ header:
   - name: Documentation
     url: https://openfisca.org/doc/
     weight: 3
-  - name: Conference
-    url: /en/conference/
+  - name: Events
+    url: /en/events/
     weight: 4
   - name: About
     url: /en/about

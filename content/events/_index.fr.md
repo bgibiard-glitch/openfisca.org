@@ -1,6 +1,9 @@
 ---
 html_title: Conférence annuelle OpenFisca
-layout: association
+layout: events
+url: /fr/evenements/
+aliases:
+  - /fr/conference/
 ---
 
 ## Conférence annuelle
@@ -11,10 +14,10 @@ Afin de refléter la diversité des lieux d’usage et de contribution d’OpenF
 
 Pour maximiser la valeur ajoutée pour les participants internationaux et accroître la visibilité, l’Association vise à co-organiser un autre événement local sur un thème plus large parallèlement à sa conférence annuelle.
 
-### 2026 — [Policy Innovation and Rules as Code]({{< relref path="2026" lang="en" >}})
+### 2026 — [Policy Innovation and Rules as Code]({{< relref path="policy-innovation-and-rules-as-code" lang="en" >}})
 
 30–31 mars 2026, Canberra, Australie 🇦🇺
 
-### 2025 — [Rules as Code Europe and Association Launch Event]({{< relref path="2025" lang="en" >}})
+### 2025 — [Rules as Code Europe and Association Launch Event]({{< relref path="rules-as-code-europe-and-association-launch-event" lang="en" >}})
 
 17–19 mars 2025, Paris, France 🇫🇷

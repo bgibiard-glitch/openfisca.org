@@ -1,6 +1,8 @@
 ---
 title: Rules as Code Europe and Association Launch Event — 2025 OpenFisca Conference
-layout: association
+layout: events
+aliases:
+  - /en/conference/2025/
 ---
 
 # 2025 OpenFisca Conference — <br/>Rules as Code Europe & Association Launch Event

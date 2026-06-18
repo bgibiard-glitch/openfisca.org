@@ -1,6 +1,8 @@
 ---
 title: Code of conduct for OpenFisca events
 layout: association
+aliases:
+  - /en/conference/code-of-conduct/
 ---
 
 # Code of conduct for events

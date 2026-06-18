@@ -1,6 +1,8 @@
 ---
 title: Policy Innovation and Rules as Code — 2026 OpenFisca Conference
-layout: association
+layout: events
+aliases:
+  - /en/conference/2026/
 ---
 
 # 2026 OpenFisca Conference — <br/>Policy Innovation & Rules as Code
