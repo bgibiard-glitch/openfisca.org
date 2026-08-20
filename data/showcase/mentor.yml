@@ -1,0 +1,12 @@
+title: Mentor
+description:
+  fr: Estimer en quelques questions les aides auxquelles les 15-30 ans ont droit, puis savoir quoi faire pour les demander.
+  en: Estimate in a few questions the benefits 15-to-30-year-olds are entitled to, then find out how to claim them.
+package: OpenFisca-France
+website: https://mentor-app.fr/simulateur
+author:
+  type: business
+  name: Mentor
+  contact: contact@mentor-app.fr
+  link: https://mentor-app.fr
+# source: proprietary
