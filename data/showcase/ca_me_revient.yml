@@ -1,0 +1,10 @@
+title: Ça me revient
+description:
+  fr: Repérer les aides sociales non réclamées et estimer leurs montants, en une minute et sans compte.
+  en: Detect unclaimed French social benefits and estimate their amounts, in one minute, without an account.
+package: OpenFisca-France
+website: https://camerevient.app/
+author:
+  type: business
+  name: Ça me revient
+  contact: contact@camerevient.app
